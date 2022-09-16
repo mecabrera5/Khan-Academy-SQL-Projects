@@ -1,0 +1,18 @@
+CREATE TABLE clothestore (id INTEGER PRIMARY KEY, item TEXT, gender TEXT, stock INTEGER, price INTEGER);
+INSERT INTO clothestore VALUES (1, "blouses", "F", 20, 20); 
+INSERT INTO clothestore VALUES (2, "skirts", "F", 25, 30); 
+INSERT INTO clothestore VALUES (3, "shirts", "M", 30, 25); 
+INSERT INTO clothestore VALUES (4, "dresses", "F", 16, 50); 
+INSERT INTO clothestore VALUES (5, "pants", "M", 27, 60); 
+INSERT INTO clothestore VALUES (6, "gloves", "M", 12, 20); 
+INSERT INTO clothestore VALUES (7, "trousers", "M", 22, 28); 
+INSERT INTO clothestore VALUES (8, "sueters", "M", 28, 39); 
+INSERT INTO clothestore VALUES (9, "jacket", "M", 95, 100); 
+INSERT INTO clothestore VALUES (10, "hats", "F", 23, 35); 
+INSERT INTO clothestore VALUES (11, "socks", "F", 100, 15); 
+INSERT INTO clothestore VALUES (12, "ties", "M", 38, 25); 
+INSERT INTO clothestore VALUES (13, "cardigan", "F", 25, 200); 
+INSERT INTO clothestore VALUES (14, "scarf", "F", 30, 35); 
+INSERT INTO clothestore VALUES (15, "suir", "M", 10, 1000); 
+SELECT * FROM clothestore WHERE price ORDER BY price;
+SELECT MAX(stock) FROM clothestore;
